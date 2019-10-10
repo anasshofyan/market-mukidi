@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Link
+Route::get('/', 'DashboardController@index');
+Route::get('/orders', 'OrdersController@index');
+Route::get('/products', 'ProductsController@index');
+Route::get('/customers', 'CustomersController@index');
+Route::get('/reports', 'ReportsController@index');
+Route::get('/integrations', 'IntegrationsController@index');
+
+//Get and Post
